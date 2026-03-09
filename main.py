@@ -6,6 +6,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/outreach')
+def outreach():
+    return render_template('outreach.html')
+
 # more functions here
 
 if __name__ == '__main__':
