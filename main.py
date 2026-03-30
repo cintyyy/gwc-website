@@ -16,6 +16,9 @@ def outreach():
 def homepage():
     return render_template('homepage.html')
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 # more functions here
 
