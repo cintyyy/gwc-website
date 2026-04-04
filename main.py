@@ -6,8 +6,6 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-<<<<<<< Updated upstream
-=======
 @app.route('/outreach')
 def outreach():
     return render_template('outreach.html')
@@ -16,13 +14,6 @@ def outreach():
 def homepage():
     return render_template('homepage.html')
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 # more functions here
 
 if __name__ == '__main__':
