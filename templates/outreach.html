@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+
+{% block title %}Middle School Outreach — MVHS GWC{% endblock %}
+
+{% block extra_css %}
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="{{ url_for('static', filename='outreach.css') }}">
+{% endblock %}
+
+{% block content %}
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__text fade-up">
+      <div class="hero__eyebrow">Middle School Outreach</div>
+      <h1 class="hero__title fade-up fade-up--delay-1">Inspiring the<br/><em>next generation</em><br/>of coders</h1>
+      <p class="hero__desc fade-up fade-up--delay-2">
+        We serve our community by visiting local middle schools and offering
+        students hands-on opportunities to learn computer science.
+      </p>
+    </div>
+
+    <div class="hero__mosaic fade-up fade-up--delay-2">
+      <div class="hero__mosaic-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="hero__mosaic-icon" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span class="hero__mosaic-label">replace with photo</span>
+      </div>
+      <div class="hero__mosaic-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="hero__mosaic-icon" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span class="hero__mosaic-label">replace with photo</span>
+      </div>
+      <div class="hero__mosaic-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="hero__mosaic-icon" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span class="hero__mosaic-label">replace with photo</span>
+      </div>
+      <div class="hero__mosaic-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="hero__mosaic-icon" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span class="hero__mosaic-label">replace with photo — wide</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE TEACH -->
+  <section class="offerings">
+    <div class="offerings__header">
+      <div class="offerings__tag">What We Offer</div>
+      <h2 class="offerings__title">Hands-on learning,<br/>real projects</h2>
+      <p class="offerings__desc">
+        Our sessions at Graham Middle School are designed to be accessible
+        and fun — no prior experience needed. We guide students through
+        real coding concepts and help them build something they're proud of.
+      </p>
+    </div>
+    <div class="offerings__list">
+
+      <div class="offerings__card">
+        <div class="offerings__card-icon offerings__card-icon--pink" aria-hidden="true">🌐</div>
+        <div class="offerings__card-body">
+          <div class="offerings__card-title">HTML &amp; Web Structure</div>
+          <p class="offerings__card-desc">Students learn how websites are built with HTML — from basic tags and headings to links, images, and page structure. They create their own "About Me" pages, adding text, styling, and formatting elements like bold, italic, and color.</p>
+        </div>
+      </div>
+
+      <div class="offerings__card">
+        <div class="offerings__card-icon offerings__card-icon--sage" aria-hidden="true">🎨</div>
+        <div class="offerings__card-body">
+          <div class="offerings__card-title">CSS &amp; Visual Styling</div>
+          <p class="offerings__card-desc">Students discover how to make their pages look great using CSS — changing fonts, colors, backgrounds, and text alignment. They learn how style properties work and practice making design choices that reflect their personality.</p>
+        </div>
+      </div>
+
+      <div class="offerings__card">
+        <div class="offerings__card-icon offerings__card-icon--stone" aria-hidden="true">⚡</div>
+        <div class="offerings__card-body">
+          <div class="offerings__card-title">JavaScript &amp; Interactivity</div>
+          <p class="offerings__card-desc">Students bring their pages to life with JavaScript — creating buttons, animations, and interactive programs. They explore variables, functions, loops, and conditionals through activities like a car animation and a number guessing game.</p>
+        </div>
+      </div>
+
+      <div class="offerings__card">
+        <div class="offerings__card-icon offerings__card-icon--dark" aria-hidden="true">🐍</div>
+        <div class="offerings__card-body">
+          <div class="offerings__card-title">Python Programming</div>
+          <p class="offerings__card-desc">Students get introduced to Python, one of the most beginner-friendly and widely used programming languages. Through hands-on exercises they practice core programming concepts in a new environment.</p>
+        </div>
+      </div>
+
+      <div class="offerings__card">
+        <div class="offerings__card-icon offerings__card-icon--blush" aria-hidden="true">🎮</div>
+        <div class="offerings__card-body">
+          <div class="offerings__card-title">Final Projects</div>
+          <p class="offerings__card-desc">Students apply everything they've learned to build a complete project from scratch, showcasing their creativity and problem-solving skills.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="gallery__inner">
+      <div class="gallery__header">
+        <div>
+          <div class="gallery__tag">Student Projects</div>
+          <h2 class="gallery__title">See what they've built</h2>
+        </div>
+        <p class="gallery__note">Photos from Graham Coding Club sessions.</p>
+      </div>
+      <div class="gallery__grid">
+        <div class="gallery__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="gallery__icon" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Photo placeholder</span>
+        </div>
+        <div class="gallery__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="gallery__icon" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Photo placeholder</span>
+        </div>
+        <div class="gallery__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="gallery__icon" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Photo placeholder</span>
+        </div>
+        <div class="gallery__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="gallery__icon" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Photo placeholder — wide</span>
+        </div>
+        <div class="gallery__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="gallery__icon" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Photo placeholder</span>
+        </div>
+        <div class="gallery__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="gallery__icon" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Photo placeholder</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GWC MISSION QUOTE -->
+  <section class="mission">
+    <div class="mission__inner">
+      <p class="mission__quote">
+        Girls Who Code is on a mission to close the gender gap in technology
+        and to change the image of what a programmer looks like and does.
+      </p>
+      <p class="mission__attr">— Girls Who Code Mission Statement</p>
+      <p class="mission__note">girlswhocode.com</p>
+    </div>
+  </section>
+
+{% endblock %}
